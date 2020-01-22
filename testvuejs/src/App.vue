@@ -35,7 +35,7 @@
 
     <v-content>
       <HelloWorld />
-      <footer />
+      <Footer />
     </v-content>
   </v-app>
 </template>
