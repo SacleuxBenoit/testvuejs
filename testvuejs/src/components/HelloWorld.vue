@@ -95,8 +95,8 @@ export default {
     ],
     importantLinks: [
       {
-        text: "Documentation",
-        href: "https://vuetifyjs.com"
+        text: "Mon lien github",
+        href: "https://github.com/SacleuxBenoit"
       },
       {
         text: "Chat",
