@@ -30,14 +30,12 @@
 </template>
 
 <script>
-
-
 export default {
-
-
-  
-  data: () => ({
-    //
-  })
-};
+  data() {
+    return {
+      title: "test"
+    }
+  },
+  name: 'app'
+  }
 </script>
