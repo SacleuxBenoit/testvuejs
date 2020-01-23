@@ -14,7 +14,12 @@
 export default {
   data() {
     return {
-      title: "test"
+      title: "test",
+      menus:[
+        {name:"About"},
+        {name:"Link2"},
+        {name:"Search"},
+      ]
     }
   },
   name: 'App' 
