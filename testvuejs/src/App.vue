@@ -38,7 +38,6 @@ export default {
 
   components: {
     HelloWorld,
-    Footer
   },
 
   data: () => ({
