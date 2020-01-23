@@ -36,6 +36,6 @@ export default {
       title: "test"
     }
   },
-  name: 'app'
+  name: 'App' 
   }
 </script>
