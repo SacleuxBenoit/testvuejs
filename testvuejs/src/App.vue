@@ -1,27 +1,20 @@
 <template>
-<v-app>
-<v-toolbar>
-  <v-toolbar-title>{{title}}</v-toolbar-title>
-  <v-spacer></v-spacer>
-  <v-toolbar-items class="hidden-sm-and-down">
-    <v-btn flat v-bind:keys='menu in menus'>{{menu.name}}</v-btn>
-  </v-toolbar-items>
-</v-toolbar>
-</v-app>
+  <div class="home">
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Footer />
+  </div>
 </template>
 
 <script>
+// @ is an alias to /src
+import HelloWorld from "@/components/HelloWorld.vue";
+import Footer from "@/components/Footer.vue";
+
 export default {
-  data() {
-    return {
-      title: "test",
-      menus:[
-        {name:"About"},
-        {name:"Link2"},
-        {name:"Search"},
-      ]
-    }
-  },
-  name: 'App' 
+  name: "home",
+  components: {
+    HelloWorld,
+    Footer
   }
+};
 </script>
