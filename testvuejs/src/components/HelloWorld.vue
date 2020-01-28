@@ -13,7 +13,6 @@
           >
         </p>
       </v-flex>
-
       <v-flex mb-5 xs12>
         <h2 class="headline font-weight-bold mb-3">What's next?</h2>
 
@@ -32,7 +31,6 @@
 
       <v-flex xs12 mb-5>
         <h2 class="headline font-weight-bold mb-3">Important Links</h2>
-
         <v-layout justify-center>
           <a
             v-for="(link, i) in importantLinks"
@@ -45,10 +43,8 @@
           </a>
         </v-layout>
       </v-flex>
-
       <v-flex xs12 mb-5>
         <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
-
         <v-layout justify-center>
           <a
             v-for="(eco, i) in ecosystem"
@@ -64,7 +60,6 @@
     </v-layout>
   </v-container>
 </template>
-
 <script>
 export default {
   name: "HelloWorld",
