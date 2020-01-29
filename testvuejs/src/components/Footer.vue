@@ -21,7 +21,7 @@
         class="primary lighten-2 py-4 text-center white--text"
         cols="12"
       >
-        {{ new Date().getFullYear() }} — <strong>Test</strong>
+        {{ new Date().getFullYear() }} — <strong>Unnamed</strong>
       </v-col>
     </v-row>
   </v-footer>
