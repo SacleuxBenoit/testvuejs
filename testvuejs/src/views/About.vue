@@ -11,6 +11,7 @@ import Footer from "@/components/Footer.vue";
 
 
 export default {
+  name:"About",
   component: {
     Header,
     Footer
