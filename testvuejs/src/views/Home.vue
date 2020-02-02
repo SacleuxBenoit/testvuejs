@@ -13,7 +13,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "home",
+  name: "test",
   components: {
     HelloWorld,
     Footer,
