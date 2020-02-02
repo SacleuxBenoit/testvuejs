@@ -4,6 +4,8 @@
     padless
   >
 <router-link to="/About">About</router-link>
+<router-link to="/ContactUs">Contact Us</router-link>
+
     <v-row
       justify="center"
       no-gutters
