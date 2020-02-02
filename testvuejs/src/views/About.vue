@@ -17,7 +17,7 @@ import Novuetify from '@/components/Novuetify.vue';
 
 
 export default {
-  name:"About",
+  name:"about",
   component: {
     Header,
     HelloWorld,
