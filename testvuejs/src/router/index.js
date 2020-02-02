@@ -17,6 +17,8 @@ const routes = [
     name: "about",
     component: Header, Footer
   },
+
+  // Fait une redirection vers le home quand le chemin n'est pas bon
   {
     path: "*",
     redirect: '/'
