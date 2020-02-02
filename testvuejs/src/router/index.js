@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import About from "../views/About.vue";
+import Footer from "../components/Footer.vue";
 import Home from "../views/Home.vue"
 Vue.use(VueRouter);
 
@@ -14,7 +14,7 @@ const routes = [
   {
     path: "/About",
     name: "about",
-    component: About
+    component: Footer
   },
 ];
 
