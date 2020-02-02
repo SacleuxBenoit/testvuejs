@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import ContactUs from "../views/ContactUs.vue";
 import Friends from "../views/Friends";
+import MessageGroupe from "../views/MessageGroupe.vue"
 Vue.use(VueRouter);
 
 const routes = [
