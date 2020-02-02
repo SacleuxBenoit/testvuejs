@@ -1,5 +1,5 @@
 <template>
-  <div class="test">
+  <div class="home">
     <Header />
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <Footer />
@@ -13,7 +13,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "test",
+  name: "home",
   components: {
     HelloWorld,
     Footer,
