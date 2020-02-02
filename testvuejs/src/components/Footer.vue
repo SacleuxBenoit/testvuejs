@@ -6,6 +6,8 @@
 <router-link to="/About">About</router-link>
 <router-link to="/ContactUs">Contact Us</router-link>
 <router-link to="/Friends">Friends</router-link>
+<router-link to="/MessageGroupe">Message Groupe</router-link>
+
     <v-row
       justify="center"
       no-gutters
