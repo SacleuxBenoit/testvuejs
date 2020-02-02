@@ -3,6 +3,7 @@
   <HelloWorld />
   <Header />
 <Footer />
+<vuetify />
 </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from "@/components/Header.vue";
 import HelloWorld from "@/components/HelloWorld.vue";
 import Footer from "@/components/Footer.vue";
+import vuetify from '../plugins/vuetify';
 
 
 export default {
@@ -17,7 +19,8 @@ export default {
   component: {
     Header,
     HelloWorld,
-    Footer
+    Footer,
+    vuetify
   }
 }
 </script>
