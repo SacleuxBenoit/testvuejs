@@ -30,7 +30,11 @@ const routes = [
     name: "messageGroupe",
     component: MessageGroupe
   },
-
+  {
+    path: "/MessagePrivate",
+    name: "messagePrivate",
+    component: MessagePrivate
+  },
   // Fait une redirection vers le home quand le chemin n'est pas bon
   {
     path: "*",
