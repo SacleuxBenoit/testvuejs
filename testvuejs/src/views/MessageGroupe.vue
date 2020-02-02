@@ -11,7 +11,7 @@ import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "MessageGroupe",
+  name: "messageGroupe",
   components: {
     Header,
     Footer
