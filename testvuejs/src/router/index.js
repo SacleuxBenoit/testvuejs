@@ -25,6 +25,11 @@ const routes = [
     name: "friends",
     component: Friends
   },
+  {
+    path: "/MessageGroupe",
+    name: "messageGroupe",
+    component: MessageGroupe
+  },
 
   // Fait une redirection vers le home quand le chemin n'est pas bon
   {
