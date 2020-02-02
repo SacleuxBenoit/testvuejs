@@ -3,6 +3,7 @@
     <router-link to="/About">About</router-link>
     <Header/>
     <Footer />
+    <router-view />
   </div>
 </template>
 
