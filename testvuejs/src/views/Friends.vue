@@ -12,7 +12,7 @@ import Header from "@/components/Header.vue";
 
 
 export default {
-  name: "Friends",
+  name: "friends",
   components: {
     Footer,
     Header
