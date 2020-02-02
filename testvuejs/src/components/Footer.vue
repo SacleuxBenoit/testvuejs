@@ -3,7 +3,7 @@
     color="primary lighten-1"
     padless
   >
-  <a href="/About">Link vers About</a>
+<router-link to="/About">About</router-link>
     <v-row
       justify="center"
       no-gutters
