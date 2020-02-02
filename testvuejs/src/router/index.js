@@ -18,8 +18,9 @@ const routes = [
   {
     path: "/ContactUs",
     name: "contactUs",
-    component: Home
+    component: ContactUs
   },
+
 
   // Fait une redirection vers le home quand le chemin n'est pas bon
   {
