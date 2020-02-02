@@ -12,7 +12,7 @@ import Footer from "@/components/Footer.vue";
 
 
 export default {
-  name: "MessagePrivate",
+  name: "messagePrivate",
   components: {
     Header,
     Footer
