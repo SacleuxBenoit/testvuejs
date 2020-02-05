@@ -3,6 +3,7 @@
     color="primary lighten-1"
     padless
   >
+<router-link to="/">Home</router-link>
 <router-link to="/About">About</router-link>
 <router-link to="/ContactUs">Contact Us</router-link>
 <router-link to="/Friends">Friends</router-link>
