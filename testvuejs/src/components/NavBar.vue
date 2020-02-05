@@ -53,8 +53,8 @@ import popupLogin from "@/components/popupLogin.vue";
 export default {
     name:"NavBar",
   components: {
-    popupRegister,
-    popupLogin
+    Register,
+    Login
   }
 };
 </script>
