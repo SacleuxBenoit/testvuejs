@@ -30,6 +30,7 @@
 
 <script>
 export default {
+    name:"NavBar",
   data() {
     return {
       activeBtn: 1
