@@ -24,23 +24,17 @@
 
         <v-tab>
           <li>
-            <nuxt-link tag="li" to="/articles">Articles</nuxt-link>
-          </li>
-        </v-tab>
-
-        <v-tab>
-          <li>
-            <nuxt-link tag="li" to="/partenaires">Partenaires</nuxt-link>
+            <nuxt-link tag="li" to="/articles">Créer un cheat-sheets</nuxt-link>
           </li>
         </v-tab>
       </v-tabs>
 
       <v-tabs right background-color="transparent" color="white">
         <v-tab>
-          <popupRegister />
+          <Register />
         </v-tab>
         <v-tab>
-          <popupLogin />
+          <Login />
         </v-tab>
       </v-tabs>
     </template>
@@ -48,8 +42,8 @@
 </template>
 
 <script>
-import popupRegister from "@/components/popupRegister.vue";
-import popupLogin from "@/components/popupLogin.vue";
+import Register from "@/components/Register.vue";
+import Login from "@/components/Login.vue";
 export default {
     name:"NavBar",
   components: {
