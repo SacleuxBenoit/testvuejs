@@ -1,7 +1,7 @@
 <template>
   <v-bottom-navigation grow height="2.5rem">
     <v-btn :value="activeBtn" style="color:#f2a413" class="subtitle-1">
-      <strong style="color:#e24d2c">#HTML</strong>
+      <strong style="color:#FB4C26">#HTML</strong>
     </v-btn>
 
     <v-btn :value="activeBtn" style="color:#72dbf2" class="subtitle-1">
@@ -40,4 +40,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 </style>
