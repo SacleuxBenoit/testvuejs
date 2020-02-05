@@ -18,13 +18,13 @@
       <v-tabs align-with-title background-color="transparent" color="white">
         <v-tab>
           <li>
-            <nuxt-link tag="li" to="/">Accueil</nuxt-link>
+            <router-link to="/">Accueil</router-link>
           </li>
         </v-tab>
 
         <v-tab>
           <li>
-            <nuxt-link tag="li" to="/articles">Créer un cheat-sheets</nuxt-link>
+<router-link to="/">Créer un cheat-sheet</router-link>
           </li>
         </v-tab>
       </v-tabs>
