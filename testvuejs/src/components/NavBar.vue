@@ -1,7 +1,8 @@
 <template>
   <v-bottom-navigation grow height="2.5rem">
     <v-btn :value="activeBtn" style="color:#f2a413" class="subtitle-1">
-      <strong style="color:#FB4C26">#HTML</strong>
+      <strong style="color:#FB4C26"><router-link to="/About">
+#HTML</router-link></strong>
     </v-btn>
 
     <v-btn :value="activeBtn" style="color:#72dbf2" class="subtitle-1">
