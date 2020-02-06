@@ -4,8 +4,7 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import ContactUs from "../views/ContactUs.vue";
 import Friends from "../views/Friends";
-import MessageGroupe from "../views/MessageGroupe.vue";
-import MessagePrivate from "../views/MessagePrivate.vue"
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -29,16 +28,7 @@ const routes = [
     name: "friends",
     component: Friends
   },
-  {
-    path: "/MessageGroupe",
-    name: "messageGroupe",
-    component: MessageGroupe
-  },
-  {
-    path: "/MessagePrivate",
-    name: "messagePrivate",
-    component: MessagePrivate
-  },
+
   // Fait une redirection vers le home quand le chemin n'est pas bon
   {
     path: "*",
