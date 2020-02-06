@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     addUser() {
-      axios.post("http://localhost:8081/api/users/register", {
+      axios.post("http://localhost:8080/api/users/register", {
         Username: this.Username,
         email: this.email,
         password: this.password
