@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <NavBar />
+    <NavBarCategorie />
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <Footer />
   </div>
@@ -8,7 +8,7 @@
 
 <script>
 // @ is an alias to /src
-import NavBar from "@/components/NavBar.vue"
+import NavBarCategorie from "@/components/NavBarCategorie.vue"
 import HelloWorld from "@/components/HelloWorld.vue";
 import Footer from "@/components/Footer.vue";
 
@@ -16,7 +16,7 @@ export default {
   name: "home",
   components: {
     HelloWorld,
-    NavBar,
+    NavBarCategorie,
     Footer,
   }
 };
