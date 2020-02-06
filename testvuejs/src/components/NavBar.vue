@@ -24,7 +24,7 @@
 
         <v-tab>
           <li>
-<router-link to="/">Créer un cheat-sheet</router-link>
+            <router-link to="/">Créer un cheat-sheet</router-link>
           </li>
         </v-tab>
       </v-tabs>
