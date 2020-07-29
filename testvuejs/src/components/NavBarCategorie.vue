@@ -6,7 +6,7 @@
     </v-btn>
 
     <v-btn :value="activeBtn" style="color:#72dbf2" class="subtitle-1">
-      <strong style="color:#2684FB">#CSS</strong>
+      <strong style="color:#2684FB"><router-link to="/Grid">#Vuetify/Grid</router-link></strong>
     </v-btn>
 
     <v-btn :value="activeBtn" style="color:#f20574" class="subtitle-1">
