@@ -1,15 +1,16 @@
 <template>
   <div>
-      <h1>test</h1>
+      <Grids/>
   </div>
 </template>
 
 <script>
-
+import Grids from "../components/Grids/Grids"
 
 export default {
   name: "grid",
   components: {
+    Grids
   }
 };
 </script>
