@@ -4,7 +4,8 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import ContactUs from "../views/ContactUs.vue";
 import Friends from "../views/Friends";
-import Grid from "../views/Grid";
+import Grid from "../views/Grid"
+
 
 Vue.use(VueRouter);
 
@@ -19,11 +20,7 @@ const routes = [
     name: "about",
     component: About
   },
-  {
-    path: "/Grid",
-    name: "grid",
-    component: Grid
-  },
+
   {
     path: "/ContactUs",
     name: "contactUs",
@@ -33,6 +30,11 @@ const routes = [
     path: "/Friends",
     name: "friends",
     component: Friends
+  },
+  {
+    path: "/Grid",
+    name: "grid",
+    component: Grid
   },
 
 
