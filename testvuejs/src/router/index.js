@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import ContactUs from "../views/ContactUs.vue";
 import Friends from "../views/Friends";
+import Grid from "../views/Grid";
 
 Vue.use(VueRouter);
 
@@ -19,6 +20,11 @@ const routes = [
     component: About
   },
   {
+    path: "/Grid",
+    name: "grid",
+    component: Grid
+  },
+  {
     path: "/ContactUs",
     name: "contactUs",
     component: ContactUs
@@ -28,6 +34,7 @@ const routes = [
     name: "friends",
     component: Friends
   },
+
 
   // Fait une redirection vers le home quand le chemin n'est pas bon
   {
