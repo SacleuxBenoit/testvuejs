@@ -1,17 +1,35 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <Categorie v-for="categorie in categories"
+    v-bind:key="categorie.id"
+    v-bind:categorieProp="categorie"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Categorie from './components/Categorie.vue'
 
 export default {
+  methods: {
+    getCategories () {
+      fetch('https://127.0.0.1:8000/api/categories', { method: 'GET' })
+        .then(response => response.json())
+        .then(categorieJSON => {
+          this.categories = categorieJSON['hydra:member']
+        })
+    }
+  },
+  mounted () {
+    this.getCategories()
+  },
   name: 'App',
+  data () {
+    return {
+      categories: null
+    }
+  },
   components: {
-    HelloWorld
+    Categorie
   }
 }
 </script>
