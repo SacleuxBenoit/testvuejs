@@ -4,8 +4,8 @@
 
     <div class="d-flex mt-5">
       <!-- Inputs -->
-      <input type="text" placeholder="Enter text" class="form-control">
-      <button class="btn btn-warning rounded-0">Submit</button>
+      <input v-model="task" type="text" placeholder="Enter text" class="form-control">
+      <button @click="submitTask" class="btn btn-warning rounded-0">Submit</button>
     </div>
           <!-- table -->
       <table class="table table-bordered mt-5">
@@ -47,6 +47,7 @@ export default {
 
   data(){
     return{
+      task: '',
       tasks: [
         {
           name: 'first todo',
@@ -58,7 +59,19 @@ export default {
         }
       ]
     }
-  }
+  },
+      methods: {
+        submitTask(){
+          if(this.task.length === 0){
+            return;
+          }else{
+            this.tasks.push({
+              name: this.task,
+              status: 'todo'
+            })
+          }
+        }
+    }
 }
 </script>
 
