@@ -28,7 +28,7 @@
               </div>
             </td>
             <td>
-              <div class="text-center">
+              <div class="text-center" @click="deleteTask(index)">
                 <span class="fa fa-trash"></span>
               </div>
             </td>
@@ -60,18 +60,24 @@ export default {
       ]
     }
   },
-      methods: {
-        submitTask(){
-          if(this.task.length === 0){
-            return;
-          }else{
-            this.tasks.push({
-              name: this.task,
-              status: 'todo'
-            })
-          }
-        }
+  
+  methods: {
+    submitTask(){
+      if(this.task.length === 0){
+        return;
+      }else{
+        this.tasks.push({
+          name: this.task,
+          status: 'todo'
+        })
+      }
+      this.task = ''
+    },
+    
+    deleteTask(index){
+      this.tasks.splice(index, 1)
     }
+  }
 }
 </script>
 
