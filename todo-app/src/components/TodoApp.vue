@@ -19,9 +19,9 @@
         </thead>
 
         <tbody>
-          <tr>
-            <td>first todo</td>
-            <td>Todo</td>
+          <tr v-for="(task,index) in tasks" :key="index">
+            <td>{{task.name}}</td>
+            <td>{{task.status}}</td>
             <td>
               <div class="text-center">
                 <span class="fa fa-pen"></span>
@@ -43,6 +43,21 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+
+  data(){
+    return{
+      tasks: [
+        {
+          name: 'first todo',
+          status: 'to-do'
+        },
+        {
+          name: 'second todo',
+          status: 'in-progress'
+        }
+      ]
+    }
   }
 }
 </script>
