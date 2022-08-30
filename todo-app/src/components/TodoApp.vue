@@ -21,7 +21,7 @@
         <tbody>
           <tr v-for="(task,index) in tasks" :key="index">
             <td>{{task.name}}</td>
-            <td>{{task.status}}</td>
+            <td><span class="pointer" @click="changeStatus(index)">{{task.status}}</span></td>
             <td>
               <div class="text-center" @click="editTask(index)">
                 <span class="fa fa-pen"></span>
@@ -49,6 +49,7 @@ export default {
     return{
       task: '',
       editedTask: null,
+      availableStatues: ['to-do','in-progress','finish'],
       tasks: [
         {
           name: 'first todo',
@@ -86,6 +87,14 @@ export default {
     editTask(index){
       this.task = this.tasks[index].name;
       this.editedTask = index;
+    },
+    changeStatus(index){
+      let newIndex = this.availableStatues.indexOf(this.tasks[index].status);
+      if(++newIndex > 2){
+        newIndex = 0;
+      }else{
+        this.tasks[index].status = this.availableStatues[newIndex];
+      }
     }
   }
 }
@@ -93,4 +102,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.pointer{
+  cursor: pointer;
+}
 </style>
