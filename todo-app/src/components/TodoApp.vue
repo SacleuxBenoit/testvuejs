@@ -21,7 +21,7 @@
         <tbody>
           <tr v-for="(task,index) in tasks" :key="index">
             <td>{{task.name}}</td>
-            <td><span class="pointer" @click="changeStatus(index)">{{task.status}}</span></td>
+            <td><span class="pointer" @click="changeStatus(index)">{{firstCharrUpper(task.status)}}</span></td>
             <td>
               <div class="text-center" @click="editTask(index)">
                 <span class="fa fa-pen"></span>
@@ -95,6 +95,9 @@ export default {
       }else{
         this.tasks[index].status = this.availableStatues[newIndex];
       }
+    },
+    firstCharrUpper(str){
+      return str.charAt(0).toUpperCase() + str.slice(1);
     }
   }
 }
